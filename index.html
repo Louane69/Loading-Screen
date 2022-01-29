@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1></h1> <!-- Change this to your server name -->
+    <h2></h2>
+    <h3></h3>
+    <div class="bg-overlay"></div>
+    <video class="fullscreen-video" id="myVideo" autoplay="autoplay" loop muted>
+        <source src="video.mp4"> <!-- Need to be video to work so get your video and paste it -->
+        <audio id='song' autoplay controls hidden>
+            <source src="music.mp3" type="audio/mpeg">
+          </audio>
+          <!-- This is music code is javascript dont touch it please -->
+          <script>
+            var play = false;
+            var myAudio = document.getElementById("song");
+                
+            function onKeyDown(event) {
+                    switch (event.keyCode) {
+                        case 32: //SpaceBar                    
+                            if (play) {
+                                myAudio.pause();
+                                play = false;
+                            } else {
+                                myAudio.play();
+                                play = true;
+                            }
+                            break;
+                    }
+              return false;
+            }
+        
+            window.addEventListener("keydown", onKeyDown, false);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,150 @@
+@font-face {
+    font-family: Moonrising;
+    src: url(Moonrising.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: Radicools;
+    src: url(TheRadicoolsCasualRegular.ttf) format("truetype");
+}
+
+
+body {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+html {
+    cursor: url('amongus.cur'),default;
+}
+
+h1 {
+    font-family: Radicools;
+    position: fixed;
+    font-size: 130px;
+    color: rgb(255, 253, 253);
+    bottom: 350px;
+    text-shadow: -2px 5px rgb(0, 0, 0);
+    transform-origin: 50% 100%;
+     
+    animation-duration: 4s; /* Change duration of text-fade animation */
+    
+    animation-name: fadeAndScale;
+    animation-timing-function: cubic-bezier(.71,.55,.62,1.57);
+    transition: transform .12s;
+
+}
+
+h1:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    position: fixed;
+    font-size: 130px;
+    color: rgb(255, 253, 253);
+    bottom: 350px;
+    text-shadow: -2px 2px
+     rgba(5, 72, 255, 0.801);
+    transform-origin: 50% 100%;
+    transition: transform .12s;
+
+
+}
+
+h2 {
+    font-family: Moonrising;
+    position: fixed;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 30px;
+    color: rgb(255, 253, 253);
+    bottom: 350px;
+    text-shadow: -2px 3px rgb(0, 0, 0);
+    transform-origin: 50% 100%;
+    animation-duration: 4s; /* Change duration of text-fade animation */
+    animation-name: fadeAndScale;
+    animation-timing-function: cubic-bezier(.71,.55,.62,1.57);
+    transition: transform .2s;
+
+
+}
+
+h2:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+
+    position: fixed;
+    font-size: 30px;
+    color: rgb(255, 253, 253);
+    bottom: 350px;
+    text-shadow: -1px 0px rgba(5, 255, 18, 0.514);
+    transform-origin: 50% 100%;
+    transition: transform .12s;
+
+
+}
+
+h3 {
+    font-family: Moonrising;
+    position: fixed;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 30px;
+    color: rgb(255, 253, 253);
+    bottom: 310px;
+    text-shadow: -2px 3px rgb(0, 0, 0);
+    transform-origin: 50% 100%;
+    animation-duration: 4s; /* Change duration of text-fade animation */
+    animation-name: fadeAndScale;
+    animation-timing-function: cubic-bezier(.71,.55,.62,1.57);
+    transition: transform .12s;
+
+
+}
+
+h3:hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+
+    font-family: Moonrising;
+    position: fixed;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 30px;
+    color: rgb(255, 253, 253);
+    bottom: 310px;
+    text-shadow: -1px 1px rgb(134, 5, 255);
+    transform-origin: 50% 100%;
+    animation-duration: 4s; /* Change duration of text-fade animation */
+    animation-name: fadeAndScale;
+    animation-timing-function: cubic-bezier(.71,.55,.62,1.57);
+    transition: transform .12s;
+
+}
+
+.fullscreen-video {
+    position: fixed;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -10;
+}
+
+@keyframes fadeAndScale {
+    from {
+        opacity: 0;
+        transform: scale(.9, .9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+}
